@@ -25,16 +25,6 @@ workflows in a fog environment is difficult because the scheduler must decide:
 HDS addresses these decisions in a static workflow-analysis phase followed by
 a dynamic BoS-level scheduling phase.
 
-```mermaid
-flowchart TD
-    A[Workflow DAG] --> B[Dependency-preserving SFCs]
-    B --> C[Topology-aware subdeadlines]
-    C --> D[Ready Bag of SFCs]
-    D --> E[Candidate VM slots]
-    E --> F[HDS placement and admission]
-    F --> G[Execution, transfer, billing, and metrics]
-```
-
 ## HDS method
 
 ### 1. Workflow-to-SFC construction
