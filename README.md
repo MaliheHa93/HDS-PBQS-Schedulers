@@ -170,9 +170,7 @@ cases.
 ## Publication figures and interpretation
 
 The canonical PNG figures are in
-[`results/figures_paper_aligned`](results/figures_paper_aligned), with vector
-PDF versions in
-[`results/figures_paper_aligned_pdf`](results/figures_paper_aligned_pdf).
+[`results/figures_paper_aligned`](results/figures_paper_aligned)
 
 - **Figure 3 — Deadline success:** complete `0.8--3.0` deadline range for
   Epigenomics and CyberShake. Solid lines show global-deadline success; dotted
