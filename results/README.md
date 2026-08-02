@@ -34,8 +34,7 @@ values derived from the raw matrices.
 
 ## Final figures
 
-Use `figures_paper_aligned/` for the canonical 300-DPI PNG files and
-`figures_paper_aligned_pdf/` for vector PDF files.
+Use `figures_paper_aligned/` for the canonical 300-DPI PNG files.
 
 1. `Figure3_deadline_success` shows global-deadline and SFC-subdeadline success
    for Epigenomics and CyberShake over the complete `0.8--3.0` range.
