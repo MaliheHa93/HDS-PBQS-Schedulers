@@ -1,0 +1,5 @@
+% Replace the Figure 6 caption and evaluation paragraph with the following.
+\caption{BoS-width runtime and accepted-SFC ratio.}
+
+\paragraph{Figure 6: BoS-width scalability.}
+Figure~\ref{fig:scalability} reports runtime and accepted-SFC ratio as the number of ready SFCs in a BoS increases. Deployment scaling is described here rather than plotted: all configurations completed through 60 fog nodes and 1,000 VNFs without a deployment solver-limit event; at the largest setting, repeated PBQS candidate evaluations produced higher median runtime than HDS. In the controlled BoS study, HDS-Sharable maintains the highest acceptance ratio, but its joint reuse optimization increases runtime and reaches solver limits from width eight onward. The other configurations remain faster but accept fewer SFCs as the BoS becomes wider.

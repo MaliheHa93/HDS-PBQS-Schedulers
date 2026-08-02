@@ -1,0 +1,93 @@
+{
+  "datasets": [
+    {
+      "duplicate_rows": 0,
+      "exact_grid": true,
+      "expected_rows": 24000,
+      "name": "deadline",
+      "passed": true,
+      "path": "results/raw/deadline_curves_paper_aligned_50seeds.csv",
+      "rows": 24000,
+      "solver_limit_rows": 0,
+      "unfinished_rows": 7353,
+      "validation_errors": 0,
+      "validation_warnings": 1
+    },
+    {
+      "duplicate_rows": 0,
+      "exact_grid": true,
+      "expected_rows": 800,
+      "name": "deployment",
+      "passed": true,
+      "path": "results/raw/deployment_scaling_paper_aligned.csv",
+      "rows": 800,
+      "solver_limit_rows": 0,
+      "unfinished_rows": 0,
+      "validation_errors": 0,
+      "validation_warnings": 0
+    },
+    {
+      "duplicate_rows": 0,
+      "exact_grid": true,
+      "expected_rows": 380,
+      "name": "bos",
+      "passed": true,
+      "path": "results/raw/bos_scaling_paper_aligned.csv",
+      "rows": 380,
+      "solver_limit_rows": 45,
+      "unfinished_rows": 4,
+      "validation_errors": 0,
+      "validation_warnings": 2
+    }
+  ],
+  "deadline_global_subdeadline_mismatch_rows": 0,
+  "figures": [
+    {
+      "canonical": "results/figures_paper_aligned/Figure3_deadline_success.png",
+      "copy_is_identical": true,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "height_px": 1041,
+      "manuscript_copy": "results/figures_for_manuscript/deadline-robustness.png",
+      "passed": true,
+      "sha256": "e63a3dc5e6d64d1adbf3a63364a7458c9f2b41ef74a4c36f65fde743aab02fd1",
+      "width_px": 3043
+    },
+    {
+      "canonical": "results/figures_paper_aligned/Figure4_macro_cost_delay.png",
+      "copy_is_identical": true,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "height_px": 1071,
+      "manuscript_copy": "results/figures_for_manuscript/AVGCost.png",
+      "passed": true,
+      "sha256": "7641a1d0d49b28906a497cfa85500e5a1e21b0843e7b373638d807a89e2df617",
+      "width_px": 3223
+    },
+    {
+      "canonical": "results/figures_paper_aligned/Figure5_transfer_cpu_ram.png",
+      "copy_is_identical": true,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "height_px": 1071,
+      "manuscript_copy": "results/figures_for_manuscript/fig3_resource_network_curves.png",
+      "passed": true,
+      "sha256": "117e287b12c6c6d5f3c2c3187a51fe8e121b39ab13157127ac1edc733201cabf",
+      "width_px": 3222
+    },
+    {
+      "canonical": "results/figures_paper_aligned/Figure6_runtime_bos_acceptance.png",
+      "copy_is_identical": true,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "height_px": 1044,
+      "manuscript_copy": "results/figures_for_manuscript/fig4_deployment_bos_scaling.png",
+      "passed": true,
+      "sha256": "e6bef18561ab6b5cda0ba44d6f86608748ceaa04d84c20268ee9bf45ebd3a152",
+      "width_px": 3219
+    }
+  ],
+  "passed": true,
+  "processed_files_missing": [],
+  "release": "v0.7.0-paper-aligned"
+}

@@ -1,0 +1,35 @@
+{
+  "allowed_missing_tail_start": 75,
+  "discarded_observed_rows": 16,
+  "discarded_ordinal_end": 43,
+  "discarded_ordinal_start": 36,
+  "discarded_unique_keys": 8,
+  "duplicate_observations_by_ordinal": {
+    "36": 2,
+    "37": 2,
+    "38": 2,
+    "39": 2,
+    "40": 2,
+    "41": 2,
+    "42": 2,
+    "43": 2
+  },
+  "expected_unique_keys": 80,
+  "input": "results/raw/deployment_shards_v0_7_clean/deployment_D10_concurrent_quarantine.csv",
+  "input_rows": 82,
+  "input_sha256": "a2f70d231739c65f065a88e03cdbfccb2b770bde9ac6e0380359c0647ed43c78",
+  "missing_ordinals": [
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ],
+  "operation": "recover_deployment_d10_writer_overlap",
+  "output": "results/raw/deployment_shards_v0_7_clean/deployment_D10.csv",
+  "output_sha256": "4ff972cdefea14cf11dd5fe11f08f4c6ef6ca591f78b67a840303664e1f437e8",
+  "resume_expected_new_rows": 14,
+  "retained_rows": 66,
+  "status": "ready_for_single_writer_resume"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "sample-json",
+  "family": "custom",
+  "arrival_s": 0,
+  "deadline_s": 10,
+  "vnfs": [
+    {
+      "id": "a",
+      "workload_mi": 16000,
+      "cpu_mips": 1000,
+      "ram_mb": 128,
+      "source_data_mb": 1
+    },
+    {
+      "id": "b",
+      "workload_mi": 24000,
+      "cpu_mips": 2000,
+      "ram_mb": 256,
+      "sink_data_mb": 1
+    }
+  ],
+  "edges": [
+    {
+      "parent": "a",
+      "child": "b",
+      "data_mb": 2
+    }
+  ]
+}

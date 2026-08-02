@@ -1,0 +1,316 @@
+{
+  "audit": {
+    "bos_first_round_denominator_mismatches": 0,
+    "bos_first_round_ratio_max_error": 8.326672684688674e-17,
+    "bos_maximum_width": 20,
+    "datasets": {
+      "bos": {
+        "duplicate_case_rows": 0,
+        "rows": 380,
+        "solver_limit_rows": 45,
+        "stage1_limit_rows": 0,
+        "stage2_limit_rows": 45,
+        "unfinished_rows": 4
+      },
+      "deadline": {
+        "duplicate_case_rows": 0,
+        "rows": 24000,
+        "solver_limit_rows": 0,
+        "stage1_limit_rows": 0,
+        "stage2_limit_rows": 0,
+        "unfinished_rows": 7353
+      },
+      "deployment": {
+        "duplicate_case_rows": 0,
+        "rows": 800,
+        "solver_limit_rows": 0,
+        "stage1_limit_rows": 0,
+        "stage2_limit_rows": 0,
+        "unfinished_rows": 0
+      }
+    },
+    "deadline_global_subdeadline_mismatch_rows": 0,
+    "deployment_maximum": {
+      "fog_nodes": 60,
+      "workflow_vnfs": 1000
+    }
+  },
+  "deadline_success_differences": {
+    "maximum_hds_advantage": {
+      "deadline_factor": 1.7,
+      "family": "montage",
+      "percentage_points": 100.0,
+      "sharing": "Sharable"
+    },
+    "maximum_hds_disadvantage": {
+      "deadline_factor": 1.25,
+      "family": "cybershake",
+      "percentage_points": -2.0,
+      "sharing": "NonSharable"
+    },
+    "original_range_kappa_max": 3.0
+  },
+  "release": "v0.7.0",
+  "sharing_effects": {
+    "deadline_factor": 3.0,
+    "filter": "Within each workflow and seed, retain only cases where all four configurations succeed globally; average within workflow, then average the four workflow means equally.",
+    "schedulers": {
+      "HDS": {
+        "cpu_utilization": {
+          "nonsharable_macro": 0.14992281333552035,
+          "sharable_absolute_change": 0.0018816076664620596,
+          "sharable_macro": 0.1518044210019824,
+          "sharable_relative_change_pct": 1.2550509322761363,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 0.14565191809284217,
+              "Sharable": 0.1494198572287105
+            },
+            "epigenomics": {
+              "NonSharable": 0.15058246228835703,
+              "Sharable": 0.15110388553663226
+            },
+            "inspiral": {
+              "NonSharable": 0.15175413943708757,
+              "Sharable": 0.15352249401111182
+            },
+            "montage": {
+              "NonSharable": 0.1517027335237946,
+              "Sharable": 0.15317144723147502
+            }
+          }
+        },
+        "end_to_end_delay_s": {
+          "nonsharable_macro": 220.7054678254116,
+          "sharable_absolute_change": 3.0455515202503705,
+          "sharable_macro": 223.75101934566197,
+          "sharable_relative_change_pct": 1.379916660089067,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 199.39716697390355,
+              "Sharable": 204.67800213287788
+            },
+            "epigenomics": {
+              "NonSharable": 247.82788016797838,
+              "Sharable": 247.66708069734526
+            },
+            "inspiral": {
+              "NonSharable": 245.80847712970495,
+              "Sharable": 246.14019235105633
+            },
+            "montage": {
+              "NonSharable": 189.78834703005953,
+              "Sharable": 196.51880220136843
+            }
+          }
+        },
+        "network_data_mb": {
+          "nonsharable_macro": 389.0735550037142,
+          "sharable_absolute_change": 3.586579449505109,
+          "sharable_macro": 392.6601344532193,
+          "sharable_relative_change_pct": 0.9218255528754378,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 499.73554132713826,
+              "Sharable": 506.2295042805017
+            },
+            "epigenomics": {
+              "NonSharable": 171.3456159549526,
+              "Sharable": 170.90396188920633
+            },
+            "inspiral": {
+              "NonSharable": 342.5821727867861,
+              "Sharable": 340.836414977065
+            },
+            "montage": {
+              "NonSharable": 542.6308899459799,
+              "Sharable": 552.6706566661042
+            }
+          }
+        },
+        "paired_seeds_by_workflow": {
+          "cybershake": 50,
+          "epigenomics": 50,
+          "inspiral": 50,
+          "montage": 50
+        },
+        "provisioning_cost": {
+          "nonsharable_macro": 0.1002,
+          "sharable_absolute_change": -0.0025249999999999995,
+          "sharable_macro": 0.097675,
+          "sharable_relative_change_pct": -2.519960079840319,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 0.10719999999999999,
+              "Sharable": 0.10419999999999999
+            },
+            "epigenomics": {
+              "NonSharable": 0.08920000000000002,
+              "Sharable": 0.08860000000000001
+            },
+            "inspiral": {
+              "NonSharable": 0.0975,
+              "Sharable": 0.09530000000000001
+            },
+            "montage": {
+              "NonSharable": 0.1069,
+              "Sharable": 0.1026
+            }
+          }
+        },
+        "ram_utilization": {
+          "nonsharable_macro": 0.28322303660097653,
+          "sharable_absolute_change": 0.0046056208543514,
+          "sharable_macro": 0.28782865745532793,
+          "sharable_relative_change_pct": 1.62614627313671,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 0.27021126282205843,
+              "Sharable": 0.2797015450904642
+            },
+            "epigenomics": {
+              "NonSharable": 0.29636708967834674,
+              "Sharable": 0.2975473191754884
+            },
+            "inspiral": {
+              "NonSharable": 0.2880395106655906,
+              "Sharable": 0.29183092240902053
+            },
+            "montage": {
+              "NonSharable": 0.2782742832379104,
+              "Sharable": 0.2822348431463386
+            }
+          }
+        }
+      },
+      "PBQS": {
+        "cpu_utilization": {
+          "nonsharable_macro": 0.13752453589863767,
+          "sharable_absolute_change": 0.05115459936223393,
+          "sharable_macro": 0.1886791352608716,
+          "sharable_relative_change_pct": 37.1967075023888,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 0.13575208551151913,
+              "Sharable": 0.20044232851474666
+            },
+            "epigenomics": {
+              "NonSharable": 0.13508845594863228,
+              "Sharable": 0.17428523248989009
+            },
+            "inspiral": {
+              "NonSharable": 0.1351962173822599,
+              "Sharable": 0.18185620258563417
+            },
+            "montage": {
+              "NonSharable": 0.14406138475213942,
+              "Sharable": 0.19813277745321545
+            }
+          }
+        },
+        "end_to_end_delay_s": {
+          "nonsharable_macro": 236.71107833228285,
+          "sharable_absolute_change": 49.20444204257757,
+          "sharable_macro": 285.9155203748604,
+          "sharable_relative_change_pct": 20.78670858552167,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 206.87404715377986,
+              "Sharable": 274.66849391414945
+            },
+            "epigenomics": {
+              "NonSharable": 262.3140577476841,
+              "Sharable": 279.22191687206595
+            },
+            "inspiral": {
+              "NonSharable": 282.1086387343959,
+              "Sharable": 318.0933996518954
+            },
+            "montage": {
+              "NonSharable": 195.54756969327156,
+              "Sharable": 271.67827106133086
+            }
+          }
+        },
+        "network_data_mb": {
+          "nonsharable_macro": 424.6888867543189,
+          "sharable_absolute_change": -87.3977964653136,
+          "sharable_macro": 337.2910902890053,
+          "sharable_relative_change_pct": -20.5792520574886,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 514.9450999395596,
+              "Sharable": 393.8528954291654
+            },
+            "epigenomics": {
+              "NonSharable": 208.17034345708294,
+              "Sharable": 176.55919180855915
+            },
+            "inspiral": {
+              "NonSharable": 421.0041536443364,
+              "Sharable": 350.5729477285885
+            },
+            "montage": {
+              "NonSharable": 554.6359499762967,
+              "Sharable": 428.1793261897082
+            }
+          }
+        },
+        "paired_seeds_by_workflow": {
+          "cybershake": 50,
+          "epigenomics": 50,
+          "inspiral": 50,
+          "montage": 50
+        },
+        "provisioning_cost": {
+          "nonsharable_macro": 0.11855,
+          "sharable_absolute_change": -0.03125,
+          "sharable_macro": 0.0873,
+          "sharable_relative_change_pct": -26.360185575706453,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 0.12180000000000002,
+              "Sharable": 0.087
+            },
+            "epigenomics": {
+              "NonSharable": 0.10759999999999997,
+              "Sharable": 0.0824
+            },
+            "inspiral": {
+              "NonSharable": 0.13040000000000002,
+              "Sharable": 0.095
+            },
+            "montage": {
+              "NonSharable": 0.1144,
+              "Sharable": 0.0848
+            }
+          }
+        },
+        "ram_utilization": {
+          "nonsharable_macro": 0.2516777890232072,
+          "sharable_absolute_change": 0.09323071628111129,
+          "sharable_macro": 0.3449085053043185,
+          "sharable_relative_change_pct": 37.04368058975379,
+          "workflow_levels": {
+            "cybershake": {
+              "NonSharable": 0.24716023242645557,
+              "Sharable": 0.36368429632881294
+            },
+            "epigenomics": {
+              "NonSharable": 0.2574399427284938,
+              "Sharable": 0.3326456099382472
+            },
+            "inspiral": {
+              "NonSharable": 0.24261552217156954,
+              "Sharable": 0.32682952049872016
+            },
+            "montage": {
+              "NonSharable": 0.25949545876630986,
+              "Sharable": 0.3564745944514936
+            }
+          }
+        }
+      }
+    }
+  }
+}

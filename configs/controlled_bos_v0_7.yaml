@@ -1,0 +1,11 @@
+study: controlled_bos
+bos_sizes: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+deadline_kappas: [5.0]
+seeds: [1, 2, 3, 4, 5]
+variants: [hds_full, pbqs]
+sharing: [Sharable, NonSharable]
+candidate_counts: [20]
+reuse_policy: auto
+solver_time_limit_s: 15
+acceptance_metric: first_round_accepted_sfc_ratio
+runtime_metric: first_round_scheduler_runtime_s

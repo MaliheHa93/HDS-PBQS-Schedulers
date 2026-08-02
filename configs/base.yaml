@@ -1,0 +1,79 @@
+experiment:
+  families: [montage, epigenomics, inspiral, cybershake]
+  workflow_sizes: [100]
+  deadline_mode: reference
+  deadline_factors: [0.8, 0.9, 1.0, 1.05, 1.1, 1.15, 1.2, 1.25,
+                     1.3, 1.35, 1.4, 1.45, 1.5, 1.6, 1.7, 1.8,
+                     1.9, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5,
+                     3.75, 4.0, 4.25, 4.5, 4.75, 5.0]
+  seeds: "1-50"
+  eta: 0.7
+  tastd_mode: downstream_reserved
+  reuse_policy: auto
+  reconstruct_earliest_start: true
+
+schedulers:
+  hds:
+    alpha: 0.7
+    beta: 0.2
+    gamma: 0.1
+    candidate_count: 20
+    solver_time_limit_s: 15
+    solver_relative_gap: 0.0
+    adaptive_bos_fallback: true
+    reuse_policy: idle_only
+  pbqs:
+    omega_u: 0.7
+    omega_w: 0.3
+    reuse_policy: queue_aware
+  variants: [HDS-Sharable, HDS-NonSharable, PBQS-Sharable, PBQS-NonSharable]
+  baselines: [PBQS, EDF, CostFirst]
+  ablations:
+    - HDS-NoReuse
+    - HDS-NoJointBoS
+
+infrastructure:
+  local_nodes: 3
+  global_nodes: 2
+  sensors: 10
+  local_cpu_mips: 8000
+  global_cpu_mips: 16000
+  local_ram_mb: 512
+  global_ram_mb: 2048
+  local_storage_mb: 1000000
+  global_storage_mb: 5000000
+  local_processing_elements: 5
+  global_processing_elements: 10
+  local_vm_cost_per_60s: 0.005
+  global_vm_cost_per_60s: 0.01
+  local_vm_storage_mb: 100000
+  global_vm_storage_mb: 500000
+  local_vm_startup_s: 0.25
+  global_vm_startup_s: 0.50
+  edge_local_latency_s: 0.0005
+  local_global_latency_s: [0.002, 0.003]
+  local_bandwidth_mbps: 100
+  global_bandwidth_mbps: 1000
+
+metrics:
+  - provisioning_cost
+  - makespan_s
+  - accepted_sfc_ratio
+  - first_round_accepted_sfc_ratio
+  - first_round_scheduler_runtime_s
+  - network_data_mb
+  - mean_link_bandwidth_utilization
+  - max_link_bandwidth_utilization
+  - cpu_utilization
+  - ram_utilization
+  - vm_time_utilization
+  - workflow_deadline_success
+  - sfc_deadline_miss_rate
+  - realized_workflow_slack_s
+  - workflow_deadline_consumption
+  - scheduler_runtime_s
+  - milp_runtime_s
+  - milp_max_single_solve_s
+  - milp_max_variables
+  - milp_max_constraints
+  - milp_limit_reached_count

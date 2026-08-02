@@ -1,0 +1,4 @@
+topology: medium
+local_nodes: 8
+global_nodes: 4
+workflow_sizes: [100, 150, 200, 250, 300]

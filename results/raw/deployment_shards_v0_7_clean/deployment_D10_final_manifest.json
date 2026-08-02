@@ -1,0 +1,19 @@
+{
+  "configuration_count": 4,
+  "duplicate_rows": 0,
+  "exact_grid": true,
+  "family_count": 4,
+  "master_merge_byte_identical_on_recheck": true,
+  "master_sha256": "7472d90d02c6aef6c079db0dbb599433c67b29f1f845d298968d40b48ca41423",
+  "profile": "xxlarge",
+  "recovery_prefix_manifest": "results/raw/deployment_recovery_artifacts/deployment_D10_prefix_recovery_manifest.json",
+  "rows": 80,
+  "seed_count": 5,
+  "sha256": "42a4b093de0ec2a320289ef2c70ec1fc20f35b9b72a03e564a86daf7b469e81a",
+  "solver_limit_rows": 0,
+  "status": "validated",
+  "unfinished_rows": 0,
+  "validation_errors": 0,
+  "validation_warnings": 0,
+  "workflow_vnfs": 1000
+}

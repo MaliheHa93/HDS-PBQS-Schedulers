@@ -1,0 +1,4 @@
+topology: small
+local_nodes: 3
+global_nodes: 2
+workflow_sizes: [25, 50, 75, 100]

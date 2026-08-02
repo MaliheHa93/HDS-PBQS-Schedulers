@@ -1,0 +1,17 @@
+family,configuration,sustained_kappa_90
+cybershake,HDS-NonSharable,1.45
+cybershake,HDS-Sharable,1.5
+cybershake,PBQS-NonSharable,1.5
+cybershake,PBQS-Sharable,2.25
+epigenomics,HDS-NonSharable,1.15
+epigenomics,HDS-Sharable,1.15
+epigenomics,PBQS-NonSharable,1.2
+epigenomics,PBQS-Sharable,1.3
+inspiral,HDS-NonSharable,1.3
+inspiral,HDS-Sharable,1.3
+inspiral,PBQS-NonSharable,1.45
+inspiral,PBQS-Sharable,1.6
+montage,HDS-NonSharable,1.5
+montage,HDS-Sharable,1.6
+montage,PBQS-NonSharable,1.6
+montage,PBQS-Sharable,2.25

@@ -1,0 +1,8 @@
+study: deployment_runtime
+profiles: [small, small_plus, medium, medium_plus, large, large_plus, xlarge_minus, xlarge, xlarge_plus, xxlarge]
+families: [montage, epigenomics, inspiral, cybershake]
+seeds: [1, 2, 3, 4, 5]
+sharing: [Sharable, NonSharable]
+deadline_kappa: 3.0
+solver_time_limit_s: 15
+aggregation: median_iqr_all_rows
